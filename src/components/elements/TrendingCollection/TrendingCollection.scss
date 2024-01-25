@@ -1,0 +1,123 @@
+@import "../../../variables.scss";
+
+
+.trending-collection-container {
+  display: flex;
+  flex-direction: column;
+
+  .trending-collection-images-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .trending-collection-primary-image {
+      width: 330px;
+      height: 330px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border-radius: 20px;
+      transition: all ease 0.3s;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+
+    .trending-collection-secondary-images {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .trending-collection-secondary-image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: all ease 0.3s;
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+
+      .trending-collection-images-count {
+        width: 100px;
+        height: 100px;
+        background-color: $purple;
+        font-family: $space-mono;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: white;
+        border-radius: 20px;
+        user-select: none;
+        transition: all ease 0.3s;
+        &:hover {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+
+  .trending-collection-info-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    .trending-collection-name {
+      font-family: $work-sans;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 140%;
+      margin-bottom: 10px;
+    }
+
+    .trending-collection-user {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      .trending-collection-user-image {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        margin-right: 12px;
+      }
+
+      .trending-collection-user-name {
+        font-family: $work-sans;
+        font-size: 16px;
+        line-height: 140%;
+        color: $white;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .trending-collection-container {
+    .trending-collection-images-container {
+
+      .trending-collection-primary-image {
+        width: 315px;
+        height: 315px;
+      }
+
+      .trending-collection-secondary-images {
+        .trending-collection-secondary-image {
+          width: 95px;
+          height: 95px;
+        }
+
+        .trending-collection-images-count {
+          width: 95px;
+          height: 95px;
+        }
+      }
+    }
+  }
+}

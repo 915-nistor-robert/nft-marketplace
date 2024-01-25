@@ -1,0 +1,80 @@
+@import "../../../variables.scss";
+
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    height: 100px;
+
+    .header-logo {
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 220px;
+
+      img {
+        width: 243px;
+        height: 32px;
+      }
+
+      h1 {
+        color: $white;
+        font-size: 22px;
+        font-family: $work-sans;
+        font-weight: 600;
+      }
+    }
+
+    .header-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        color: $white;
+        font-size: 16px;
+        font-family: $work-sans;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 12px 20px;
+        margin: 0 10px;
+      }
+
+      .sign-up-button {
+        width: 152px;
+        height: 60px;
+      }
+    }
+    .header-burger-menu{
+      display: none;
+    }
+  }
+
+@media screen and (min-width: 375px) and (max-width: 1281px) {
+  .header-container {
+    .header-logo {
+      width: 182px;
+
+      img {
+        width: 182px;
+        height: 24px;
+      }
+    }
+    .header-links {
+      display: none;
+    }
+    .header-burger-menu{
+      display: flex;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+}
+

@@ -1,0 +1,307 @@
+@import "../../../variables";
+
+
+.discover-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 704px;
+
+  .get-started-button {
+    width: 224px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+
+  .discover-statistics-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .discover-statistics {
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 150px;
+      text-align: left;
+
+      .discover-statistics-number {
+        font-family: $space-mono;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 140%;
+      }
+
+      .discover-statistics-text {
+        font-family: $work-sans;
+        font-size: 24px;
+        line-height: 160%;
+      }
+    }
+  }
+  .discover-section-content {
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .discover-section-content-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;
+      margin-right: 30px;
+
+      .discover-section-title {
+        color: $white;
+        font-family: $work-sans;
+        font-size: 67px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 0;
+      }
+
+      .discover-section-description {
+        color: $white;
+        font-family: $work-sans;
+        font-size: 22px;
+        line-height: 160%;
+        margin-bottom: 30px;
+      }
+
+
+    }
+
+    .discover-section-content-right {
+      display: flex;
+      flex-direction: column;
+
+      .highlighted-nft-image {
+        width: 510px;
+        height: 401px;
+        margin-bottom: -5px;
+      }
+
+      .highlighted-nft-description {
+        width: 470px;
+        color: $white;
+        background: $grey;
+        font-family: $work-sans;
+        padding: 22px 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 20px 20px;
+
+        .highlighted-nft-title {
+          text-align: left;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 140%;
+          margin: 0 0 10px 0;
+
+        }
+
+        .highlighted-nft-user {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+
+          img {
+            width: 24px;
+            height: 24px;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 140%;
+            margin: 0;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .discover-mobile-bottom {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1281px) {
+  .discover-section-container {
+    height: 541px;
+
+    .discover-section-content {
+      width: 680px;
+
+      .discover-section-content-left {
+        .discover-section-title {
+          font-size: 38px;
+          line-height: 120%;
+        }
+
+        .discover-section-description {
+          font-size: 16px;
+          line-height: 140%;
+          margin-bottom: 20px;
+        }
+
+        .get-started-button {
+          margin-bottom: 20px;
+        }
+
+        .discover-statistics-wrapper {
+          .discover-statistics {
+            width: 90px;
+
+            .discover-statistics-number {
+              font-size: 22px;
+              line-height: 160%;
+            }
+
+            .discover-statistics-text {
+              font-size: 16px;
+              line-height: 140%;
+            }
+          }
+        }
+      }
+
+      .discover-section-content-right {
+        .highlighted-nft-image {
+          width: 330px;
+          height: 221px;
+          margin-bottom: -5px;
+        }
+
+        .highlighted-nft-description {
+          width: 290px;
+          padding: 22px 20px;
+          border-radius: 0 0 20px 20px;
+
+          .highlighted-nft-title {
+            font-size: 22px;
+            line-height: 140%;
+            margin: 0 0 10px 0;
+
+          }
+
+          .highlighted-nft-user {
+            img {
+              width: 24px;
+              height: 24px;
+            }
+
+            p {
+              font-size: 16px;
+              line-height: 140%;
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .discover-section-container {
+    height: 786px;
+
+    .discover-section-content {
+      width: 315px;
+      flex-direction: column;
+
+
+      .discover-section-content-left {
+        margin-right: 0;
+
+        .discover-section-title {
+          font-size: 28px;
+          line-height: 140%;
+          margin: 0;
+        }
+
+        .discover-section-description {
+          font-size: 16px;
+          line-height: 140%;
+          margin-bottom: 40px;
+        }
+
+        .get-started-button {
+          display: none;
+        }
+
+        .discover-statistics-wrapper {
+          display: none;
+        }
+      }
+
+      .discover-section-content-right {
+        margin-bottom: 40px;
+        .highlighted-nft-image {
+          width: 315px;
+          height: 206px;
+          margin-bottom: -5px;
+        }
+
+        .highlighted-nft-description {
+          width: 275px;
+          border-radius: 0 0 20px 20px;
+
+          .highlighted-nft-title {
+            font-size: 22px;
+            line-height: 140%;
+            margin: 0 0 10px 0;
+
+          }
+
+          .highlighted-nft-user {
+            img {
+              width: 24px;
+              height: 24px;
+            }
+
+            p {
+              font-size: 16px;
+              line-height: 140%;
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+
+      .discover-mobile-bottom {
+        display: flex;
+        flex-direction: column;
+
+        .get-started-button {
+          width: 315px;
+          height: 60px;
+          margin-bottom: 40px;
+        }
+        .discover-statistics-wrapper {
+          justify-content: space-between;
+          .discover-statistics {
+            width: 90px;
+            margin-right: 0;
+
+            .discover-statistics-number {
+              font-size: 22px;
+              line-height: 160%;
+            }
+
+            .discover-statistics-text {
+              font-size: 16px;
+              line-height: 140%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
