@@ -8,7 +8,7 @@ up page.
 To get started, you can clone this repository and then install the dependencies:
 
 ```
-git clone https://github.com/915-nistor-robert/Nft-Marketplace.git
+git clone https://github.com/915-nistor-robert/nft-marketplace.git
 cd trade-table-app
 npm install
 ```
