@@ -19,9 +19,9 @@ export default function HomeHeader() {
                 <img src={marketplaceLogo} alt={'LOGO'}/>
             </div>
             <div className={'header-links'}>
-                <a href={'#'}>NFT Marketplace</a>
-                <a href={'#'}>Rankings</a>
-                <a href={'#'}>Connect a wallet</a>
+                <a href={'/'}>NFT Marketplace</a>
+                <a href={'/'}>Rankings</a>
+                <a href={'/'}>Connect a wallet</a>
                 <div className={'sign-up-button'}>
                     <BaseButton text={'Sign up'} disabled={false} filled={true} icon={userIcon} onClick={handleSignUp}/>
                 </div>
